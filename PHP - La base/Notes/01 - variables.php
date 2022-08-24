@@ -1,3 +1,8 @@
+<?php 
+	$username = "John";
+	// phpt = php tags
+	// phpe = php echo
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -5,7 +10,15 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		Nom : 
+		<div>
+
+		</div>
+		Nom : <?php echo $username ?>
+		<div>
+			égal à...
+		</div>
+		Nom : <?= $username ?>
+		
 	</body>
 </html>
 
