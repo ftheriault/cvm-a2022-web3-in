@@ -1,3 +1,11 @@
+<?php
+	//if (!$loggedIn) {
+		header("location:signin.php");
+		exit;
+	//}
+
+	//execute("DELETE FROM USERS");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
