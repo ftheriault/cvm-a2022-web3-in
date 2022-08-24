@@ -1,4 +1,11 @@
+<?php
+	require_once("lib/Utils.php");
+	
+	// require();
+	// include();
+	// include_once();
 
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -6,7 +13,7 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		Résultat : 
+		Résultat : <?= resultatFormuleScientifique(2, 3) ?>
 	</body>
 </html>
 
