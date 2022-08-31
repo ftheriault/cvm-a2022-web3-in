@@ -7,6 +7,13 @@
 	<body>
 		<div id="container">
 			<header>
-				<a href="index.php">Accueil</a> - 
-				<a href="prive.php">Privé</a> 	
+				<a href="index.php">Accueil</a>
+				<?php
+					if (!empty($data["isConnected"])) {
+						?>
+						- <a href="prive.php">Privé</a> 	
+						- <a href="deconnexion.php">Déconnexion</a> 						
+						<?php
+					}
+				?>
 			</header>
