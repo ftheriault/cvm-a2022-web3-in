@@ -1,12 +1,14 @@
 <?php
+	require_once("action/CommonAction.php");
 
-	class ProfileAction {
+	class ProfileAction extends CommonAction {
 		
 		public function __construct() {
-
+			parent::__construct(CommonAction::$VISIBILITY_MEMBER);
 		}
 
-		public function execute() {
+		protected function executeAction() {
+
 			return [];
 		}
 	}	
