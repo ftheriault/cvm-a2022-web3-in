@@ -12,6 +12,15 @@
 				</div>
 				<div class="username-section">
 					Bonjour, <?= $data["username"] ?> !
+					<?php
+						if ($data["isConnected"]) {
+							?>
+							<a href="?logout=true">
+								Déconnexion
+							</a>
+							<?php
+						}
+					?>
 				</div>
 				<div class="clear"></div>
 				

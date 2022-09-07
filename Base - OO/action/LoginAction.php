@@ -1,5 +1,6 @@
 <?php
 	require_once("action/CommonAction.php");
+	require_once("action/DAO/UserDAO.php");
 
 	class LoginAction extends CommonAction {
 		
@@ -11,11 +12,11 @@
 			$hasConnectionError = false;
 
 			if (isset($_POST["username"])) {
-				if ($_POST["username"] == "john" &&
-					$_POST["pwd"] == "qwerty") {
-					
-					$_SESSION["visibility"] = CommonAction::$VISIBILITY_MEMBER;
-					$_SESSION["username"] = $_POST["username"];
+				$result = UserDAO::authenticate($_POST["username"], $_POST["pwd"]);
+
+				if (!empty($result)) {					
+					$_SESSION["visibility"] = $result["visibility"];
+					$_SESSION["username"] = $result["username"];
 					
 					header("location:home.php");
 					exit;
