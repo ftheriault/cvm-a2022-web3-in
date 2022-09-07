@@ -11,7 +11,7 @@
 					<h2>StarCVM Coffees</h2>
 				</div>
 				<div class="username-section">
-					Bonjour, invité !
+					Bonjour, <?= $data["username"] ?> !
 				</div>
 				<div class="clear"></div>
 				
@@ -19,8 +19,15 @@
 					<ul>
 						<li><a href="index.php">Accueil du site</a></li>
 						<li><a href="login.php">Se connecter</a></li>
-						<li><a href="home.php">Mon accueil perso (privé)</a></li>
-						<li><a href="profile.php">Mon profil (privé)</a></li>
+
+						<?php
+							if ($data["isConnected"]) {
+								?>
+								<li><a href="home.php">Mon accueil perso</a></li>
+								<li><a href="profile.php">Mon profil</a></li>
+								<?php
+							}			
+						?>
 					</ul>
 				</div>
 			</div>

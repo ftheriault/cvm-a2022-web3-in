@@ -25,6 +25,6 @@
 				}
 			}
 
-			return compact("hasConnectionError");
+			return compact("hasConnectionError"); // Création d'un dictionnaire avec la clé hasConnectionError
 		}
 	}

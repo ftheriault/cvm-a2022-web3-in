@@ -25,7 +25,11 @@
 
             $data = $this->executeAction();
 
-            return $data;
+            // Variable nécessaire dans plusieurs vues (ex: header/footer)
+            $data["username"] = $_SESSION["username"] ?? "invité";
+            $data["isConnected"] = $_SESSION["visibility"] > CommonAction::$VISIBILITY_PUBLIC;
+
+            return $data; // Retourne à la vue
         }
 
         // Template method (design pattern)
