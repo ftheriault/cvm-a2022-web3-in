@@ -32,7 +32,9 @@
                     <h3>Smart Home</h3>
                     <div>
                         <div>
-                            <img src="img/btn-refresh.png" alt="refresh" class="btn-refresh">
+                            <a href="">
+                                <img src="img/btn-refresh.png" alt="refresh" class="btn-refresh">
+                            </a>
                         </div>
                         <div class="steps-section">
                             <p>
