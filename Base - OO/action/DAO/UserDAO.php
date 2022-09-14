@@ -1,4 +1,5 @@
 <?php
+    require_once("action/DAO/Connection.php");
     
     // Toutes les méthodes qui gèrent les données liées aux usagers
     class UserDAO {
