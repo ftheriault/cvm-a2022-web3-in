@@ -9,7 +9,7 @@
     <head>
         <title>Sha1</title>
         <link href="css/global.css" rel="stylesheet" />
-        <script src="js/javascript.js"></script>
+        <script defer src="js/javascript.js"></script>
         <meta charset="utf-8"/>
     </head>
     <body>
@@ -24,6 +24,7 @@
 			<div class="formSeparator"></div>
 
 			<div id="result">
+				
 			</div>
 		</div>
     </body>
